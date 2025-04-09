@@ -7,18 +7,18 @@ manifest:
   # west schema version
   version: "1.2"
   remotes:
-    # short name for project URLs, WikiEmbeddedRepo
-    - name: WikiEmbeddedRepo
-      url-base: https://github.com/richMetellus/Wiki_Embedded_System
+    # short name for remote base path, RichGH
+    - name: RichGH
+      url-base: https://github.com/richMetellus
   projects:
     # list of projects managed by west
     # download to <workspace-name>/source/...
     - name: Wiki_Embedded_System
-      remote: WikiEmbeddedRepo
+      remote: RichGH
       revision: main
       # set to import all for now, but will trim down using the
       # name-allowlist
-      import: true
+      # import: true
   self:
     # this repository will be cloned to manifest_repo
     # west to download this to <workspace-name>/manifest_repo
