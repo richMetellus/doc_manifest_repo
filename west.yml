@@ -5,15 +5,15 @@
 
 manifest:
   # west schema version
-  version: "1.2.0"
+  version: "1.2"
   remotes:
     # short name for project URLs, WikiEmbeddedRepo
     - name: WikiEmbeddedRepo
-      url-base: https://github.com/richMetellus/Wiki_Embedded_System.git
+      url-base: https://github.com/richMetellus/Wiki_Embedded_System
   projects:
     # list of projects managed by west
     # download to <workspace-name>/source/...
-    - name: source/Wiki_Embedded_System
+    - name: Wiki_Embedded_System
       remote: WikiEmbeddedRepo
       revision: main
       # set to import all for now, but will trim down using the
