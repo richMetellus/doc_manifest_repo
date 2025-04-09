@@ -1,0 +1,26 @@
+# The west manifest for Testing west to build sphinx multi projects
+# Says workspace is docs_all/{build,source}
+# Under docs_all/source/ you can many topics, many sphinx project docs.
+# this
+
+manifest:
+  # west schema version
+  version: "1.2.0"
+  remotes:
+    # short name for project URLs, WikiEmbeddedRepo
+    - name: WikiEmbeddedRepo
+      url-base: https://github.com/richMetellus/Wiki_Embedded_System.git
+  projects:
+    # list of projects managed by west
+    # download to <workspace-name>/source/...
+    - name: source/Wiki_Embedded_System
+      remote: WikiEmbeddedRepo
+      revision: main
+      # set to import all for now, but will trim down using the
+      # name-allowlist
+      import: true
+  self:
+    # this repository will be cloned to manifest_repo
+    # west to download this to <workspace-name>/manifest_repo
+    # or leave default path to the name of the repository
+    path: manifest_repo
