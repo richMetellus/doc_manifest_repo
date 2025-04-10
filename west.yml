@@ -16,25 +16,25 @@ manifest:
     - name: Wiki_Embedded_System
       remote: RichGH
       revision: main
-      path: modules/Wiki_Embedded_System
+      path: topics/Wiki_Embedded_System
       # set to import all for now, but will trim down using the
       # name-allowlist
       # import: true
     - name: Wiki_ElectricalElectronics
       remote: RichGH
       revision: main
-      path: modules/Wiki_EE
+      path: topics/Wiki_EE
     - name: Wiki_NetworkEngineering
       remote: RichGH
       revision: main
-      path: modules/Wiki_NetworkEngineering
+      path: topics/Wiki_NetworkEngineering
     - name: Wiki_CommunicationProtocols
       remote: RichGH
       revision: main
-      path: modules/Wiki_CommunicationProtocols
+      path: topics/Wiki_CommunicationProtocols
     - name: Wiki_Programming
       remote: RichGH
-      path: modules/Wiki_ProgrammingGen
+      path: topics/Prog/Wiki_ProgrammingGen
       revision: main
       import: true
   defaults:
