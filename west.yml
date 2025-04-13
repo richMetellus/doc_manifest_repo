@@ -16,14 +16,16 @@ manifest:
     - name: Wiki_Embedded_System
       remote: RichGH
       revision: main
-      path: topics/Wiki_Embedded_System
+      path: topics/Wiki_EmbedSysGen
       # set to import all for now, but will trim down using the
       # name-allowlist
       # import: true
+      submodules: true
     - name: Wiki_ElectricalElectronics
       remote: RichGH
       revision: main
       path: topics/Wiki_EE
+      submodules: true
     - name: Wiki_NetworkEngineering
       remote: RichGH
       revision: main
