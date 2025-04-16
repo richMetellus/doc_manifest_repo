@@ -30,6 +30,7 @@ manifest:
       remote: RichGH
       revision: main
       path: topics/Wiki_NetworkEngineering
+      submodules: true
     - name: Wiki_CommunicationProtocols
       remote: RichGH
       revision: main

@@ -27,3 +27,24 @@ To initialize a T2 topology workspace using the west.yml manifest provided by th
 
    **Note**: you can use `west topdir` command to print the top level directory
    of the workspace.
+
+## Making changes
+
+1. make sure you checkout to a branch before making your changes. By default,
+   west pull the revision in detached HEAD with  ``git checkout --detach``
+
+   ```console
+   west forall -c "git fetch <remote>"
+   ```
+
+   example:
+
+   ```console
+   west forall -c "git fetch RichGH"
+   ```
+
+  then, checkout the correct branch
+
+  ```console
+  west forall -c "git checkout main"
+  ```
