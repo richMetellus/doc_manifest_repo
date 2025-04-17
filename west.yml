@@ -40,6 +40,9 @@ manifest:
       path: topics/Prog/Wiki_ProgrammingGen
       revision: main
       import: true
+    - name: Wiki_OperatingSystemsGen
+      path: topics/OS/Wiki_OperatingSystemsGen
+
   defaults:
     remote: RichGH
     revision: main
