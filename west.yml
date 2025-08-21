@@ -42,6 +42,8 @@ manifest:
       import: true
     - name: Wiki_OperatingSystemsGen
       path: topics/OS/Wiki_OperatingSystemsGen
+      revision: main
+      import: true
 
   defaults:
     remote: RichGH
