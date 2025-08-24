@@ -48,3 +48,13 @@ To initialize a T2 topology workspace using the west.yml manifest provided by th
   ```console
   west forall -c "git checkout main"
   ```
+
+2. Then you should be able to follow the typical git workflow to track your changes.
+
+```bash
+# make some changes
+# add all new files and changes
+west forall -c 'git add .'
+# commit
+west forall -c 'git commit -am "My git commit message"'
+```
